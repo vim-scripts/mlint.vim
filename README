@@ -1,0 +1,11 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1781
+
+This is the compiler file for the Matlab code checker - mlint. I've tested this with Matlab R2006a and vim 7.0, but this should work with other versions too.
+
+Matlab's editor automatically checks the code you type in it for warnings and errors. To do this in vim, install this script, and type :make whenever you want to check your code. There is a button for this in gvim. Note that you need to have Matlab's bin directory in your system path. 
+
+mlint's messages are of 3 types :
+Type 1: Suggestions and simple warnings
+Type 2: Warnings about performance penalties
+Type 3: Errors
+The type number is displayed next to the column number in the error window. Use :copen to open the error window, and :cn and :cp  (or Alt-n and Alt-p) to go to the next and previous message respectively.
